@@ -43,8 +43,39 @@ public class I18nControllerTest: NinjaTest() {
 
         assertTrue(result?.contains("Implicit language is: de-DE")!!)
 
-        // Change the header and try again
 
+    }
+
+    [Test]
+    fun testThatExplicitLangSettingWorks() : Unit {
+
+        // 1) test that overriding of accept-language header works
+        var headers = hashMapOf("Accept-Language" to "de-DE")
+
+        var result = ninjaTestBrowser?.makeRequest("${getServerAddress()}/i18n/en", headers)
+
+        assertTrue(result?.contains(TEXT_EN)!!)
+
+        headers = hashMapOf("Accept-Language" to "de-DE")
+
+        result = ninjaTestBrowser?.makeRequest("${getServerAddress()}/i18n/tk", headers)
+
+        assertTrue(result?.contains(TEXT_EN)!!)
+
+
+        // 3) test when no accept-lanugage is present => fallback should be
+        //    language on the root.
+        headers.clear()
+
+        result = ninjaTestBrowser?.makeRequest("${getServerAddress()}/i18n/tk", headers)
+
+        assertTrue(result?.contains(TEXT_EN)!!)
+
+        // 4) normal operation
+        headers = hashMapOf("Accept-Language" to "de-DE")
+        result = ninjaTestBrowser?.makeRequest("${getServerAddress()}/i18n/de", headers)
+
+        assertTrue(result?.contains(TEXT_DE)!!)
 
     }
 
