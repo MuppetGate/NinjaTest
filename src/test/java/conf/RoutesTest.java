@@ -16,9 +16,9 @@
 
 package conf;
 
+import controllers.ApplicationController;
 import org.junit.Test;
 
-import controllers.ApplicationController;
 import ninja.NinjaRouterTest;
 
 public class RoutesTest extends NinjaRouterTest {

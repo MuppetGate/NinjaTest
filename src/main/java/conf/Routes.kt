@@ -13,6 +13,7 @@ import controllers.UploadController
 import ninja.AssetsController
 import ninja.utils.NinjaProperties
 import com.google.inject.Inject
+import controllers.ApplicationController
 
 /**
  * Created by raymond on 08/10/2013.
@@ -86,7 +87,7 @@ class Routes [Inject] (var ninjaProperties : NinjaProperties) : ApplicationRoute
         // this is tested in RoutesTest
         if (!ninjaProperties.isProd())
         {
-            router?.GET()?.route("/_test/testPage")?.with(javaClass<ApplicationController?>(), "testPage")
+            router?.GET()?.route("/_test/testPage")?.with(javaClass<ApplicationController>(), "testPage")
         }
 
         router?.GET()?.route("/assets/.*")?.with(javaClass<AssetsController>(), "serve")
