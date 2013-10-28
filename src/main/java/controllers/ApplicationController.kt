@@ -25,7 +25,7 @@ public class ApplicationController {
      * System-wide logger
      */
 
-    var logger: Logger? = LoggerFactory.getLogger(javaClass<ApplicationController>())
+    private var logger: Logger? = LoggerFactory.getLogger(javaClass<ApplicationController>())
     [Inject] set(value) { $logger = value }
 
     var lang: Lang? = null
