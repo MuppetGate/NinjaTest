@@ -14,6 +14,7 @@ import ninja.AssetsController
 import ninja.utils.NinjaProperties
 import com.google.inject.Inject
 import controllers.ApplicationController
+import controllers.AsyncController
 
 /**
  * Created by raymond on 08/10/2013.
