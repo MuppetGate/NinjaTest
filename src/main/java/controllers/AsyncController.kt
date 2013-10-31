@@ -20,9 +20,7 @@ public class AsyncController {
     fun asyncEcho(ctx: Context) : Result? {
         executorService.schedule( {
 
-
                 ctx.returnResultAsync(Results.json()?.render(ctx.getParameter("message")))
-
 
 
         }, ctx.getParameter("timeout")!!.toLong(), TimeUnit.MILLISECONDS)
