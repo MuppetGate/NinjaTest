@@ -13,6 +13,9 @@ import ninja.validation.Validation
 import ninja.params.Param
 import ninja.validation.Required
 import models.Contact
+import kotlin.properties.Delegates
+import com.google.inject.Guice
+import conf.Module
 
 
 /**
@@ -25,17 +28,21 @@ public class ApplicationController {
      * System-wide logger
      */
 
-    private var logger: Logger? = LoggerFactory.getLogger(javaClass<ApplicationController>())
-    [Inject] set(value) { $logger = value }
+    private val logger: Logger = LoggerFactory.getLogger(javaClass<ApplicationController>())!!
 
-    var lang: Lang? = null
-    [Inject] set(value) { $lang = value }
+    private val lang: Lang by Delegates.lazy {
+
+        val injector = Guice.createInjector(Module())
+
+        injector!!.getInstance(javaClass<Lang>())!!
+
+    }
 
 
 
     fun examples(context: Context): Result? {
 
-        logger?.info("In example")
+        logger.info("In example")
 
         // Default rendering is simple by convention
         // This renders the page in views/ApplicationController/index.ftl.html
