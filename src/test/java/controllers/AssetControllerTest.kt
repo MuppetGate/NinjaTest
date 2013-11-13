@@ -8,7 +8,7 @@ import org.apache.http.HttpResponse
 import kotlin.test.assertEquals
 
 /**
- * Created by raymond on 13/10/2013.
+ * Created on 13/10/2013.
  */
 public class AssetControllerTest: NinjaTest() {
 

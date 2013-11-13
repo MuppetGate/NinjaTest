@@ -10,7 +10,7 @@ import ninja.lifecycle.Dispose
 import java.lang.Long.parseLong
 
 /**
- * Created by raymond on 28/10/2013.
+ * Created on 28/10/2013.
  */
 [Singleton]
 public class AsyncController {

@@ -5,7 +5,7 @@ import ninja.servlet.NinjaServletDispatcher
 import filters.DemoServletFilter
 
 /**
- * Created by raymond on 22/10/2013.
+ * Created on 22/10/2013.
  */
 /**
  * This module is optional.

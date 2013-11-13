@@ -7,7 +7,7 @@ import kotlin.test.assertTrue
 import java.io.File
 
 /**
- * Created by raymond on 22/10/2013.
+ * Created on 22/10/2013.
  */
 public class UploadControllerTest: NinjaTest() {
 

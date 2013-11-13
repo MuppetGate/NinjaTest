@@ -6,7 +6,7 @@ import kotlin.test.assertTrue
 import kotlin.test.assertEquals
 
 /**
- * Created by raymond on 08/10/2013.
+ * Created on 08/10/2013.
  */
 public class I18nControllerTest: NinjaTest() {
 

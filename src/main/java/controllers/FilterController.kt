@@ -12,7 +12,7 @@ import filters.LoggerFilter
 import filters.TeaPotFilter
 
 /**
- * Created by raymond on 01/11/2013.
+ * Created on 01/11/2013.
  */
 [Singleton]
 public class FilterController {

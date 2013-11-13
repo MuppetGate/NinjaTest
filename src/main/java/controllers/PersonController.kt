@@ -6,7 +6,7 @@ import models.Person
 import ninja.Results
 
 /**
- * Created by raymond on 07/10/2013.
+ * Created on 07/10/2013.
  */
 [Singleton]
 public class PersonController {

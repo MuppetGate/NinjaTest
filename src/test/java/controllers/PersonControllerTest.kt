@@ -7,7 +7,7 @@ import com.google.gson.Gson
 import kotlin.test.assertEquals
 
 /**
- * Created by raymond on 07/10/2013.
+ * Created on 07/10/2013.
  */
 public class PersonControllerTest: NinjaTest() {
 

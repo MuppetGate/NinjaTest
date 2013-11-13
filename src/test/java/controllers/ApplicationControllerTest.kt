@@ -7,7 +7,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
 /**
- * Created by raymond on 04/11/2013.
+ * Created on 04/11/2013.
  */
 public class ApplicationControllerTest : NinjaTest() {
 

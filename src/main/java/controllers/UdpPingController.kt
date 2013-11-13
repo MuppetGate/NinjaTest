@@ -13,7 +13,7 @@ import ninja.Results
 import kotlin.properties.Delegates
 
 /**
- * Created by raymond on 03/11/2013.
+ * Created on 03/11/2013.
  */
 [Singleton]
 public class UdpPingController {

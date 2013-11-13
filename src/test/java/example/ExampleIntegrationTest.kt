@@ -5,7 +5,7 @@ import kotlin.test.assertTrue
 import org.junit.Test
 
 /**
- * Created by raymond on 22/10/2013.
+ * Created on 22/10/2013.
  */
 public class ExampleIntegrationTest: NinjaFluentLeniumTest() {
 

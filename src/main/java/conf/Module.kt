@@ -5,7 +5,7 @@ import etc.GreetingService
 import etc.GreetingServiceImpl
 
 /**
- * Created by raymond on 22/10/2013.
+ * Created on 22/10/2013.
  */
 public class Module: AbstractModule() {
 

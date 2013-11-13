@@ -1,7 +1,7 @@
 package etc
 
 /**
- * Created by raymond on 28/10/2013.
+ * Created on 28/10/2013.
  */
 public class GreetingServiceTestImpl: GreetingService {
 

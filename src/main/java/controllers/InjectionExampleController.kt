@@ -8,7 +8,7 @@ import ninja.Context
 import ninja.Results
 
 /**
- * Created by raymond on 28/10/2013.
+ * Created on 28/10/2013.
  */
 [Singleton]
 public class InjectionExampleController {

@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 /**
- * Created by raymond on 08/10/2013.
+ * Created on 08/10/2013.
  */
 public class NotFoundTest : NinjaTest() {
 
